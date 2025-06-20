@@ -155,8 +155,8 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 18px;
   color: var(--text-white-0);
   background-color: #196264;
-  background-image: url("../../img/bg-btn.svg"), -webkit-gradient(linear, left top, left bottom, from(#207278), color-stop(#237b81), color-stop(#26838a), color-stop(#298c94), to(#2c959d));
-  background-image: url("../../img/bg-btn.svg"), linear-gradient(to bottom, #207278, #237b81, #26838a, #298c94, #2c959d);
+  background-image: url("../img/bg-btn.svg"), -webkit-gradient(linear, left top, left bottom, from(#207278), color-stop(#237b81), color-stop(#26838a), color-stop(#298c94), to(#2c959d));
+  background-image: url("../img/bg-btn.svg"), linear-gradient(to bottom, #207278, #237b81, #26838a, #298c94, #2c959d);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -254,7 +254,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .hero {
-  background-image: url(../../img/bg-hero.png);
+  background-image: url(../img/bg-hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -357,7 +357,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about {
-  background-image: url(../../img/bg-about.png);
+  background-image: url(../img/bg-about.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .geography {
   padding: var(--offset-padding) 0;
-  background-image: url(../../img/bg-geography.png);
+  background-image: url(../img/bg-geography.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -549,7 +549,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .levels {
   padding: var(--offset-padding) 0;
-  background-image: url(../../img/bg-levels.png);
+  background-image: url(../img/bg-levels.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -653,7 +653,7 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 15px 0;
 }
 .levels__vip {
-  background-image: url(../../img/bg-vip.svg);
+  background-image: url(../img/bg-vip.svg);
   background-size: 134% 120%;
   background-repeat: no-repeat;
   background-position: center;
@@ -684,7 +684,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .brands {
   padding: var(--offset-padding) 0;
-  background-image: url(../../img/bg-brands.png);
+  background-image: url(../img/bg-brands.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -740,7 +740,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .footer {
-  background-image: url(../../img/bg-footer.png);
+  background-image: url(../img/bg-footer.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
