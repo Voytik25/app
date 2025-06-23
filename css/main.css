@@ -1676,17 +1676,8 @@ h1, h2, h3, h4, h5, h6, p {
     padding: var(--offset-padding-m) 0;
   }
 }
-.stages__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 35px 0;
+.stages__swiper {
+  padding: 35px 0 !important;
   background-image: url(../img/Description.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -1707,6 +1698,15 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .stages__top-item {
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .stages__top-item img {
   -webkit-transition: 0.05 ease-in all;
