@@ -12811,7 +12811,7 @@ document.addEventListener('DOMContentLoaded', () => {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper */ "./node_modules/swiper/swiper.esm.js");
 
-swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination]);
+swiper__WEBPACK_IMPORTED_MODULE_0__["default"].use([swiper__WEBPACK_IMPORTED_MODULE_0__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_0__.Autoplay]);
 const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.works__swiper', {
   slidesPerView: 4,
   spaceBetween: 35,
@@ -12831,6 +12831,38 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.works__swipe
     },
     1201: {
       slidesPerView: 4
+    }
+  }
+});
+const swiperS = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.stages__swiper', {
+  spaceBetween: 15,
+  loop: true,
+  spaceBetween: 15,
+  autoplay: {
+    delay: 500,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2
+    },
+    450: {
+      slidesPerView: 3
+    },
+    550: {
+      slidesPerView: 4
+    },
+    700: {
+      slidesPerView: 5
+    },
+    900: {
+      slidesPerView: 6
+    },
+    1100: {
+      slidesPerView: 7
+    },
+    1200: {
+      slidesPerView: 8
     }
   }
 });
