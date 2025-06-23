@@ -38,45 +38,50 @@
     <header class="header" id="header">
   <div class="header__container container">
     <a href="/" class="header__logo"><img src="./img/logo.svg" alt=""></a>
-    <nav>
-      <ul class="header__nav list-reset">
-        <li class="header__nav-item"><a href="" class="header__nav-link">Главная</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">О нас</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">Услуги</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">Вакансии</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">Документы</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">Гайды</a></li>
-        <li class="header__nav-item"><a href="" class="header__nav-link">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="header__right">
-      <div class="header__btns">
-        <a href="" class="header__login">Войти</a><a href=""
-          class="header__reg btn-main">Зарегистрироваться</a>
-      </div>
-      <nav class="lang">
-        <ul class="menu list-reset">
-          <li class="menu-item">
-            <button class="menu-btn btn-reset">
-              <span>РУС</span>
-            </button>
-            <!-- <div class="dropdown">
-              <ul class="dropdown-list list-reset">
-                <li class="dropdown-item">
-                  <a href="#" class="dropdowm-link">Rus</a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="#" class="dropdowm-link">Fra</a>
-                </li>
-                <li class="dropdown-item">
-                  <a href="#" class="dropdowm-link">Deu</a>
-                </li>
-              </ul>
-            </div> -->
-          </li>
+    <div class="header__top">
+      <nav>
+        <ul class="header__nav list-reset">
+          <li class="header__nav-item"><a href="" class="header__nav-link">Главная</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">О нас</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">Услуги</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">Вакансии</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">Документы</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">Гайды</a></li>
+          <li class="header__nav-item"><a href="" class="header__nav-link">Контакты</a></li>
         </ul>
       </nav>
+      <div class="header__right">
+        <div class="header__btns">
+          <a href="" class="header__login">Войти</a><a href="" class="header__reg btn-main">Зарегистрироваться</a>
+        </div>
+        <nav class="lang">
+          <ul class="menu list-reset">
+            <li class="menu-item">
+              <button class="menu-btn btn-reset">
+                <span>РУС </span>
+                <img src="./img/lang-arrow.svg" alt="">
+              </button>
+              <div class="dropdown">
+                <ul class="dropdown-list list-reset">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdowm-link">РУС</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdowm-link">ФРА</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdowm-link">АНГ</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
+    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>
 
@@ -182,16 +187,13 @@
       <p class="offer__descr">Мы создаём комплексные рекламные кампании, охватывая все ключевые направления
         digital-маркетинга: инфлюенс-маркетинг, медийная реклама и перфоманс</p>
 
-      <div class="offer__titles">
+      <div class="offer__wrap">
         <div class="offer__left">
           <div class="offer__subtitle">📈 Перфоманс-реклама</div>
         </div>
         <div class="offer__right">
           <div class="offer__subtitle">🎯 Медийная реклама</div>
         </div>
-      </div>
-
-      <div class="offer__wrap">
         <ul class="offer__list list-reset offer__wrap-left">
           <li class="offer__item">
             <img src="./img/check-green.svg" alt="" class="offer__check">
@@ -279,52 +281,6 @@
             <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Быстрый запуск</li>
             <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Бюджетный формат</li>
             <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Базовая аналитика</li>
-          </ul>
-          <a href="" class="levels__btn">Начать сейчас</a>
-        </div>
-      </li>
-      <li class="levels__item">
-        <div class="levels__top">
-          <div class="levels__up">
-            <img src="./img/levels.svg" alt="" class="levels__icon">
-            <h3 class="levels__head">Продвинутый</h3>
-            <p class="levels__subdescr">Для стабильного охвата и вовлечения</p>
-          </div>
-          <div class="levels__price">
-            <span class="levels__price-cost">$199</span>
-            <span class="levels__price-month">в месяц</span>
-          </div>
-        </div>
-        <div class="levels__bottom">
-          <ul class="levels__sublist list-reset">
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Подбор 20 блогеров</li>
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">2 рекламных площадки</li>
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Улучшенное вовлечение</li>
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Анализ эффективности</li>
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Оптимизация бюджета</li>
-          </ul>
-          <a href="" class="levels__btn">Начать сейчас</a>
-        </div>
-      </li>
-      <li class="levels__item">
-        <div class="levels__top">
-          <div class="levels__up">
-            <img src="./img/levels.svg" alt="" class="levels__icon">
-            <h3 class="levels__head">Гарантированный результат</h3>
-            <p class="levels__subdescr">Фокус на KPI и уверенность в результате.</p>
-          </div>
-          <div class="levels__price">
-            <span class="levels__price-cost">$299</span>
-            <span class="levels__price-month">в месяц</span>
-          </div>
-        </div>
-        <div class="levels__bottom">
-          <ul class="levels__sublist list-reset">
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">KPI по росту и продажам</li>
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Гарантия возврата при провале</li>
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Полный контроль кампании</li>
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Продвинутые инструменты</li>
-            <li class="levels__subitem"><img src="./img/check-white.svg" alt="">Отчётность и прозрачность</li>
           </ul>
           <a href="" class="levels__btn">Начать сейчас</a>
         </div>
@@ -613,8 +569,6 @@
             <a href=""><img src="./img/tg2.svg" alt="" class="footer__social-img"></a>
           </li>
         </ul>
-        <img src="./img/government.svg" alt="" class="footer__govern">
-        <a href="" class="footer__verification">Проверить компанию</a>
       </div>
       <div class="footer__company">
         <h4 class="footer__title">Компания</h4>
@@ -651,6 +605,10 @@
               San Francisco, CA 1980</span></li>
         </ul>
       </div>
+    </div>
+    <div class="footer__bottom">
+      <img src="./img/government.svg" alt="" class="footer__govern">
+      <a href="" class="footer__verification">Проверить компанию</a>
     </div>
     <span class="footer__copyright">Zinflu. 2025 © Все права защищены</span>
   </div>
