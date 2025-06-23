@@ -12602,7 +12602,13 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_swiper__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/swiper */ "./src/js/components/swiper.js");
+/* harmony import */ var _components_lang__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/lang */ "./src/js/components/lang.js");
+/* harmony import */ var _components_lang__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_lang__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/burger */ "./src/js/components/burger.js");
+/* harmony import */ var _components_burger__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_components_burger__WEBPACK_IMPORTED_MODULE_2__);
 console.log('components');
+
+
 
 
 /***/ }),
@@ -12739,6 +12745,62 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/js/components/burger.js":
+/*!*************************************!*\
+  !*** ./src/js/components/burger.js ***!
+  \*************************************/
+/***/ (() => {
+
+const burger = document.querySelector('.burger');
+const menu = document.querySelector('.header__top');
+burger.addEventListener('click', () => {
+  burger.classList.toggle('burger--active');
+  menu.classList.toggle('header__top--active');
+});
+
+/***/ }),
+
+/***/ "./src/js/components/lang.js":
+/*!***********************************!*\
+  !*** ./src/js/components/lang.js ***!
+  \***********************************/
+/***/ (() => {
+
+document.addEventListener('DOMContentLoaded', () => {
+  const menuBtns = document.querySelectorAll('.menu-btn');
+  const drops = document.querySelectorAll('.dropdown');
+  menuBtns.forEach(el => {
+    el.addEventListener('click', e => {
+      let currentBtn = e.currentTarget;
+      let drop = currentBtn.closest('.menu-item').querySelector('.dropdown');
+      menuBtns.forEach(el => {
+        if (el !== currentBtn) {
+          el.classList.remove('menu-btn--active');
+        }
+      });
+      drops.forEach(el => {
+        if (el !== drop) {
+          el.classList.remove('dropdown--active');
+        }
+      });
+      drop.classList.toggle('dropdown--active');
+      currentBtn.classList.toggle('menu-btn--active');
+    });
+  });
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.menu')) {
+      menuBtns.forEach(el => {
+        el.classList.remove('menu-btn--active');
+      });
+      drops.forEach(el => {
+        el.classList.remove('dropdown--active');
+      });
+    }
+  });
+});
+
+/***/ }),
+
 /***/ "./src/js/components/swiper.js":
 /*!*************************************!*\
   !*** ./src/js/components/swiper.js ***!
@@ -12761,7 +12823,13 @@ const swiper = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.works__swipe
     320: {
       slidesPerView: 1
     },
-    769: {
+    701: {
+      slidesPerView: 2
+    },
+    1001: {
+      slidesPerView: 3
+    },
+    1201: {
       slidesPerView: 4
     }
   }
